@@ -1,6 +1,6 @@
 'use strict';
 
-const { Helper } = require('./lib/helper');
+const Helper = require('./lib/helper');
 
 /**
  * 安装 helper 服务
