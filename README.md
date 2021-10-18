@@ -11,6 +11,11 @@ ctx.body = ctx.helper.query('kw', {
   list:'int[]',
   trim:'trim',
   trimList:'trim[]',
+  name: {
+    type: 'string',
+    as: 'asName',
+    default: 'no name',
+  },
 });
 ```
 ```bash
@@ -33,6 +38,7 @@ curl --location --request GET '127.0.0.1:7001/typecast?kw=%20111%20&count=222&is
     "ddd",
     "d",
     "1"
-  ]
+  ],
+  "asName": "no name"
 }
 ```

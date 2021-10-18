@@ -1,11 +1,11 @@
 import 'koa';
 
-type typeCastPickFields = (string | { [key: string]: string | ((value: any, defaultValue: any) => any) })[];
+import { castFields } from 'typecasts';
 
 declare interface Helper {
-  query(...fields: typeCastPickFields): { [key: string]: any };
-  body(...fields: typeCastPickFields): { [key: string]: any };
-  params(...fields: typeCastPickFields): { [key: string]: any };
+  query(...fields: castFields[]): { [as: string]: any };
+  body(...fields: castFields[]): { [as: string]: any };
+  params(...fields: castFields[]): { [as: string]: any };
 }
 
 declare module 'koa' {
