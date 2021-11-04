@@ -15,6 +15,10 @@ ctx.body = ctx.helper.query('kw', {
     type: 'string',
     as: 'asName',
     default: 'no name',
+    validate: {
+      maxLength: 100,
+      minLength: 2,
+    },
   },
 });
 ```
