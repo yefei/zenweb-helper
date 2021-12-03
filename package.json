@@ -17,6 +17,11 @@
     "framework",
     "koa"
   ],
+  "files": [
+    "lib",
+    "index.d.ts",
+    "message-codes.json"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,8 +30,17 @@
   "bugs": {
     "url": "https://github.com/yefei/zenweb-helper/issues"
   },
+  "peerDependencies": {
+    "@zenweb/api": "^1.2.0",
+    "@zenweb/messagecode": "^1.0.1"
+  },
   "devDependencies": {
+    "@zenweb/api": "^1.2.0",
+    "@zenweb/body": "^1.1.0",
     "@zenweb/core": "^1.0.0",
+    "@zenweb/cors": "^1.1.0",
+    "@zenweb/messagecode": "^1.0.1",
+    "@zenweb/router": "^1.1.2",
     "eslint": "^7.16.0",
     "koa": "^2.13.1"
   },

@@ -7,6 +7,8 @@ const Helper = require('./lib/helper');
  * @param {import('@zenweb/core').Core} core
  */
 function setup(core) {
+  core.check('@zenweb/api');
+  core.check('@zenweb/messagecode');
   core.defineContextCacheProperty('helper', ctx => new Helper(ctx));
 }
 
