@@ -1,6 +1,6 @@
 {
   "name": "@zenweb/helper",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Zenweb Helper module",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,6 @@
     "koa": "^2.13.1"
   },
   "dependencies": {
-    "typecasts": "^1.8.4"
+    "typecasts": "^1.9.0"
   }
 }
