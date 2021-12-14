@@ -4,6 +4,7 @@
   "description": "Zenweb Helper module",
   "main": "index.js",
   "scripts": {
+    "dev": "cd example && DEBUG=* node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
