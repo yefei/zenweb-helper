@@ -1,7 +1,6 @@
 'use strict';
 
 const Helper = require('./lib/helper');
-const Grid = require('./lib/grid');
 
 /**
  * 安装 helper 服务
@@ -15,5 +14,4 @@ function setup(core) {
 
 module.exports = {
   setup,
-  Grid,
 };
