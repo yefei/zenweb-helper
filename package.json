@@ -1,8 +1,9 @@
 {
   "name": "@zenweb/helper",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Zenweb Helper module",
-  "main": "index.js",
+  "exports": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "dev": "cd example && DEBUG=* node app",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,21 +32,16 @@
   "bugs": {
     "url": "https://github.com/yefei/zenweb-helper/issues"
   },
-  "peerDependencies": {
-    "@zenweb/api": "^1.2.0",
-    "@zenweb/messagecode": "^1.0.1"
-  },
   "devDependencies": {
-    "@zenweb/api": "^1.2.0",
-    "@zenweb/body": "^1.1.0",
-    "@zenweb/core": "^1.0.0",
+    "@types/koa": "^2.13.4",
+    "@zenweb/api": "^2.1.1",
+    "@zenweb/body": "^2.0.0",
+    "@zenweb/core": "^2.1.2",
     "@zenweb/cors": "^1.1.0",
     "@zenweb/messagecode": "^1.0.1",
-    "@zenweb/router": "^1.1.2",
-    "eslint": "^7.16.0",
-    "koa": "^2.13.1"
+    "@zenweb/router": "^1.1.2"
   },
   "dependencies": {
-    "typecasts": "^1.9.0"
+    "typecasts": "^1.9.1"
   }
 }
