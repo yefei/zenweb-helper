@@ -5,8 +5,7 @@
   "exports": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "dev": "cd example && DEBUG=* node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc --build --clean && tsc"
   },
   "author": {
     "name": "YeFei",
@@ -20,8 +19,7 @@
     "koa"
   ],
   "files": [
-    "lib",
-    "index.d.ts",
+    "dist",
     "message-codes.json"
   ],
   "license": "MIT",
@@ -35,13 +33,11 @@
   "devDependencies": {
     "@types/koa": "^2.13.4",
     "@zenweb/api": "^2.1.1",
-    "@zenweb/body": "^2.0.0",
+    "@zenweb/body": "^2.2.1",
     "@zenweb/core": "^2.1.2",
-    "@zenweb/cors": "^1.1.0",
-    "@zenweb/messagecode": "^1.0.1",
-    "@zenweb/router": "^1.1.2"
+    "@zenweb/messagecode": "^2.1.1"
   },
   "dependencies": {
-    "typecasts": "^1.9.1"
+    "typecasts": "^1.9.2"
   }
 }

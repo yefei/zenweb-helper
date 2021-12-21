@@ -1,7 +1,9 @@
+import '@zenweb/api';
+import '@zenweb/body';
+import '@zenweb/messagecode';
+
 import * as Koa from 'koa';
-import { ValidateError } from 'typecasts';
-import { RequiredError } from 'typecasts';
-import { castFields, typeCastPick } from 'typecasts';
+import { ValidateError, RequiredError, castFields, typeCastPick } from 'typecasts';
 
 export class Helper {
   ctx: Koa.Context;
