@@ -1,13 +1,16 @@
-import { Core } from "@zenweb/core";
-import { Helper } from "./helper";
+import { SetupFunction } from '@zenweb/core';
+import { Helper } from './helper';
 
 /**
  * 安装 helper 服务
  */
-export function setup(core: Core) {
-  core.check('@zenweb/api');
-  core.check('@zenweb/messagecode');
-  core.defineContextCacheProperty('helper', ctx => new Helper(ctx));
+export default function setup(): SetupFunction {
+  return function helper(setup) {
+    setup.checkContextProperty('fail', 'Need to setup @zenweb/api');
+    setup.checkCoreProperty('messageCodeResolver', 'Need to setup @zenweb/messagecode');
+    setup.defineContextCacheProperty('helper', ctx => new Helper(ctx));
+    setup.core.messageCodeResolver.assign(require('../message-codes.json'));
+  }
 }
 
 declare module 'koa' {

@@ -1,9 +1,9 @@
 {
   "name": "@zenweb/helper",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Zenweb Helper module",
   "exports": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "tsc --build --clean && tsc"
   },
@@ -31,11 +31,10 @@
     "url": "https://github.com/yefei/zenweb-helper/issues"
   },
   "devDependencies": {
-    "@types/koa": "^2.13.4",
-    "@zenweb/api": "^2.1.1",
-    "@zenweb/body": "^2.2.1",
-    "@zenweb/core": "^2.1.2",
-    "@zenweb/messagecode": "^2.1.1"
+    "@zenweb/api": "^2.3.0",
+    "@zenweb/body": "^2.3.0",
+    "@zenweb/core": "^2.3.2",
+    "@zenweb/messagecode": "^2.3.0"
   },
   "dependencies": {
     "typecasts": "^1.9.2"
