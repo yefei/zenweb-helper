@@ -37,6 +37,6 @@
     "@zenweb/messagecode": "^2.3.0"
   },
   "dependencies": {
-    "typecasts": "^1.9.2"
+    "typecasts": "^1.10.1"
   }
 }

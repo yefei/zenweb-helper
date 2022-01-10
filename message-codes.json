@@ -15,6 +15,8 @@
   "helper.validate-error.email": "{field} 必须符合电子邮件格式",
   "helper.validate-error.slug": "{field} 不符合路径规则",
   "helper.validate-error.url": "{field} 请输入正确的链接",
+  "helper.validate-error.maxItems": "{field} 最多不能超过 {target} 项",
+  "helper.validate-error.minItems": "{field} 最少不能低于 {target} 项",
   "helper.validate-error.cast": "{field} 格式错误",
   "helper.validate-error.cast.int": "{field} 必须为有效的整数",
   "helper.validate-error.cast.number": "{field} 必须为有效数值",
